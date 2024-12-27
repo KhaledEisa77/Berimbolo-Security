@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(0deg, black, rgb(228, 225, 225) 50%);
+}
+.main-section {
+  min-height: 100vh;
+  padding-top: 76px;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+footer p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-img-top {
+      height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+      font-size: 2.5rem;
+  }
+  
+  .card-img-top {
+      height: 160px;
+  }
+}

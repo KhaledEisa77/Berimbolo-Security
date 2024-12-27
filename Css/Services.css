@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    padding-top: 76px;
+    background-image: linear-gradient(0deg, black, rgb(228, 225, 225) 50%);
+}
+
+/* Hero Section */
+.hero-container {
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.Hero {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2rem;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Hero-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Cards Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Icons Styling */
+.fa-3x {
+    margin-bottom: 1.5rem;
+    color: #0d6efd;
+}
+
+/* Button Styling */
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+footer p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+footer i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Hero {
+        min-height: 200px;
+    }
+    
+    .Hero-h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-container .row {
+        flex-direction: column-reverse;
+    }
+    
+    .Hero {
+        min-height: 150px;
+    }
+
+    .Hero-h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Navigation Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* Contact Section Styling */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-lg {
+    padding: 0.75rem 2.5rem;
+}

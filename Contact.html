@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berimbolo Security</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/Contact.css" />
+    <link rel="stylesheet" href="./Css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="img/لBrimbolo.png">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <div class="container-fluid navb">
+      <a class="navbar-brand" href="index.html">Berimbolo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="Contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="container bntnav d-flex align-items-center justify-content-end">
+          <button class="btn btn-outline-light" type="button" style="padding: 8px 30px" onclick="window.location.href='log in.html';">
+            Log in
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+    <!-- Form -->
+    <div class="contact-form ">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error" id="phoneError">Please enter a valid phone number</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <span class="error" id="messageError">Please enter your message</span>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Berimbolo Security</h3>
+                    <p>Your trusted partner in security solutions.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Service.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Contact Info</h3>
+                    <a href="https://wa.me/201002560204" target="_blank"><i class="fas fa-phone"></i> +201002560204</a>
+                    <p><i class="fas fa-envelope"></i> khaled78dream@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Security St, City</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="Js/Contact.js"></script>
+</body>
+</html>
